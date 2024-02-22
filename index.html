@@ -1,21 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junior H songs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Junior H songs</title>
+        
+        <style>
+            
+            #statsTable{border:3px solid black;border-collapse:separate; text-align:center; margin:auto}
+            #tableData{font-family: courier new; color:black};
+            th{border:3px solid black;background-color:#CD00FF}
+            td{border:3px solid black;background-color:#CD00FF}
+
+            * {
+              box-sizing: border-box;
+            }
+            
+            .column {
+              float: left;
+              width: 33.33%;
+              padding: 5px;
+            }
+            
+            /* Clearfix (clear floats) */
+            .row::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+        </style>
 
 </head>
+
 <body style="background-color: rgb(96, 161, 110);">
     
     <h1 style="text-align:center; font-family:cursive;">Top 3 Junior H songs in Order</h1>
-    <img src="CruisinwithJuniorHAlbumCover.jpeg" width="100" height="100" />
-    <h1>Intro</h1>
-    <img src="ContigenteAlbumCover.jpeg" width="100" height="100"/>
-    <h2>Vete Ya</h2>
-    <img src="CorridosTumbadosAlbumCover.jpeg" width="100" height="100"/>
+    
+    <div class="row">
 
-    <h3>Ella</h3>
-    <p1>This is it for now</p1>
+        <div class="column">
+            <img src="CruisinwithJuniorHAlbumCover.jpeg" alt="CruisinWJuniorH" style="width:100%">
+            <h1 style="font-family:cursive"> 
+            <a href="https://www.youtube.com/watch?v=y3JcRIfX5Ao" target="_blank" >Intro</a>
+        </h1>
+        </div>
+
+        <div class="column">
+            <img src="ContigenteAlbumCover.jpeg" alt="Forest" style="width:100%">
+            <h2 style="font-family: cursive; text-align:center;"><a href="https://www.youtube.com/watch?v=loPCaTfDqDE" target="_blank"> Vete Ya </a>
+            </h2>
+        </div>
+
+        <div class="column">
+            <img src="CorridosTumbadosAlbumCover.jpeg" alt="Mountains" style="width:100%">
+            <h3 style="font-family: cursive; text-align:center;"><a href="https://www.youtube.com/watch?v=8Gj8RtE3bOI" target="_blank"> Ella </a>
+            </h3>
+        </div>
+
+    </div>
+
+    <table id="statsTable">
+
+        <caption style="background-color: crimson; border:3px solid;">Junior H Song Statistics</caption>
+        <tr id="tableData">
+
+            <th width="33.33%">Song</th>
+            <th width="33.33%">Rating</th>
+            <th width="33.33%">Plays on Spotify</th>
+
+        </tr>
+        <tr id="tableData">
+            <td>Intro</td>
+            <td>10/10</td>
+            <td>114,657,989</td>
+        </tr>
+        <tr id="tableData">
+            <td>Vete Ya</td>
+            <td>9.5/10</td>
+            <td>51,335,090</td>
+        </tr>
+        <tr id="tableData">
+            <td>Ella</td>
+            <td>9.5/10</td>
+            <td>376,865,811</td>
+        </tr>
+      
+    </table>
+    
 </body>
 </html>
+
+
+<!-- <center><img src="CruisinwithJuniorHAlbumCover.jpeg" width="250" height="250" /></center> -->
+
+
+<!-- <center><img src="ContigenteAlbumCover.jpeg" width="200" height="200"/></center> -->
+
+<!-- <center><img src="CorridosTumbadosAlbumCover.jpeg" width="150" height="150"/></center> -->
